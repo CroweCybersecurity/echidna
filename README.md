@@ -22,18 +22,20 @@ impacket krb5/crypto libraries to generate Kerberos keys.
 
 ```
 python krbKeyGenerate.py -h
-  usage: krbKeyGenerate.py [-h] [-u USERNAME] [-p PASSWORD] [-d DOMAIN]
+  usage: krbKeyGenerate.py [-h] -u USERNAME -p PASSWORD -d DOMAIN [-j]
 
   Kerberos Key Generator
 
   optional arguments:
     -h, --help            show this help message and exit
     -u USERNAME, --user USERNAME
-                          Case sensitive Username
+            Case sensitive Username
     -p PASSWORD, --password PASSWORD
-                          Password for user
+            Password for user
     -d DOMAIN, --domain DOMAIN
-                          Domain
+            Domain
+    -j, --john Output
+            jtr format
 ```
 
 Example Command

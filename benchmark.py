@@ -22,7 +22,7 @@ if __name__ == '__main__':
     wordlist = args.wordlist
 
     # Generate Kerberos Keys
-    keys = krbKeyGenerate.main(username, password, domain)
+    keys = krbKeyGenerate.main(username, password, domain, None)
 
     # Loop through Keys and Record Time
     for key in reversed(keys):
